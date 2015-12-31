@@ -5,7 +5,7 @@
   <div class="container">
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
     <div class="row">
-      <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+      <% if (theme.sidebar){ %>
         <div class="col-sm-8 blog-main">
           <%- body %>
         </div>

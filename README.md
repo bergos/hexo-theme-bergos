@@ -10,11 +10,19 @@ Based off of the [official Bootstrap Blog example template](http://getbootstrap.
 
 ### Install
 
-``` bash
+**Bootstrap3 theme requires Hexo 2.4 and above.**
+
+1) Install theme:
+
+```bash
 $ git clone https://github.com/cgmartin/hexo-theme-bootstrap3.git themes/bootstrap3
 ```
 
-**Bootstrap3 theme requires Hexo 2.4 and above.**
+2) Install [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) (optional):
+
+```bash
+$ npm install hexo-tag-bootstrap --save
+```
 
 ### Enable
 
@@ -41,7 +49,7 @@ excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: true
 widgets:
 - category
 - tag
@@ -121,8 +129,9 @@ This is some callout content
 
 ### Sidebar
 
-This theme provides 5 built-in widgets that can be displayed in the sidebar:
+This theme provides 6 built-in widgets that can be displayed in the sidebar:
 
+- about
 - category
 - tag
 - tagcloud

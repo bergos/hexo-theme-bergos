@@ -14,9 +14,14 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 1em;
+  margin-bottom: 15px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
+}
+
+p {
+  margin: 0 0 15px;
 }
 
 code {
@@ -67,8 +72,6 @@ code {
     color: #cdddeb;
     font-weight: 500;
 }
-
-
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {

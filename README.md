@@ -51,6 +51,7 @@ fancybox: true
 # Sidebar
 sidebar: true
 widgets:
+- about
 - category
 - tag
 - tagcloud

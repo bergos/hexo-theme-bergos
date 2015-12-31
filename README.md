@@ -1,6 +1,8 @@
 # hexo-theme-bootstrap3
 
-A basic [Bootstrap v3] theme for [Hexo].
+A basic [Bootstrap v3] blog theme for [Hexo].
+
+Based off of the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
 
 - [Preview](http://hexo.io/hexo-theme-landscape/)
 
@@ -54,11 +56,11 @@ twitter:
 google_plus:
 ```
 
-- **menu** - Navigation menu
-- **rss** - RSS link
+- **menu** - Navigation menu (map of Titles to URLs)
+- **rss** - RSS link (ie. "/atom.xml")
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
-- **fancybox** - Enable [Fancybox]
-- **widgets** - Widgets displaying in sidebar
+- **fancybox** - Enable [Fancybox] for images
+- **widgets** - Enable sidebar widgets ([more info below](#sidebar))
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path (ie. '/favicon.ico')
 - **twitter_id** - Twitter ID of the author (ie. `@c_g_martin`)
@@ -86,7 +88,7 @@ This theme provides 5 built-in widgets that can be displayed in the sidebar:
 - archives
 - recent_posts
 
-All widgets are enabled by default. You can edit them in `widget` setting.
+All widgets are enabled and will displayed by default. You can toggle them on/off with the `widgets` setting.
 
 ## Development
 

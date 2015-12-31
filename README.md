@@ -78,6 +78,17 @@ This theme uses [Fancybox] to showcase your photos. You can use Markdown syntax 
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
 
+### Callouts
+
+A [custom tag](https://hexo.io/api/tag.html) for a Bootstrap "callout" style is available:
+
+```
+{% callout [type:default|primary|success|info|warning|danger] %}
+#### Callout title
+This is some callout content
+{% endcallout %}
+```
+
 ### Sidebar
 
 This theme provides 5 built-in widgets that can be displayed in the sidebar:

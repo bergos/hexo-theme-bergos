@@ -2,9 +2,7 @@
 
 A basic [Bootstrap v3] blog theme for [Hexo].
 
-Based off of the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
-
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+Based on the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
 
 ## Installation
 

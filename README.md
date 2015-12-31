@@ -69,7 +69,7 @@ google_plus:
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+This theme uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)
@@ -81,7 +81,7 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 
 You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
 
-Landscape provides 5 built-in widgets:
+This theme provides 5 built-in widgets:
 
 - category
 - tag
@@ -95,17 +95,8 @@ All of them are enabled by default. You can edit them in `widget` setting.
 
 ### Requirements
 
-- [Grunt] 0.4+
 - Hexo 2.4+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
 
 [Hexo]: http://zespia.tw/hexo/
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/

@@ -15,7 +15,8 @@ function isCurrentMenu(menu){
       .replace(/^\//, '');
   });
 
-  return paths[0] === paths[1];
+  return paths[0] === paths[1] ||
+    (paths[0].length && paths[1].substring(0, paths[0].length) === paths[0]);
 }
 
 hexo.extend.helper.register('is_current_menu', isCurrentMenu);

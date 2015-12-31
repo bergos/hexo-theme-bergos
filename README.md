@@ -1,6 +1,6 @@
-# Landscape
+# hexo-theme-bootstrap3
 
-A brand new default theme for [Hexo].
+A basic [Bootstrap v3] theme for [Hexo].
 
 - [Preview](http://hexo.io/hexo-theme-landscape/)
 
@@ -9,19 +9,19 @@ A brand new default theme for [Hexo].
 ### Install
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/cgmartin/hexo-theme-bootstrap3.git themes/bootstrap3
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Bootstrap3 theme requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `bootstrap3`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/bootstrap3
 git pull
 ```
 

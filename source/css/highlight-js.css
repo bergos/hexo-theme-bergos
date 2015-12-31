@@ -3,16 +3,25 @@
   background: white;
   color: #333333;
   overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+.highlight figcaption {
+  font-size: .8em;
+  color: #999;
+}
+.highlight figcaption a {
+  float: right;
 }
 
 .highlight table {
-    margin: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 .highlight pre {
-    margin: 0;
-    background-color: #eeeeee;
+  margin: 0;
+  background-color: #eeeeee;
 }
 
 .highlight .comment,

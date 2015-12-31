@@ -16,7 +16,7 @@ $ git clone https://github.com/cgmartin/hexo-theme-bootstrap3.git themes/bootstr
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `bootstrap3`.
+Modify the `theme` setting in `_config.yml` to `bootstrap3`.
 
 ### Update
 
@@ -49,7 +49,7 @@ widgets:
 
 # Miscellaneous
 google_analytics:
-favicon: /favicon.png
+favicon:
 twitter:
 google_plus:
 ```
@@ -58,12 +58,11 @@ google_plus:
 - **rss** - RSS link
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox]
-- **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
 - **widgets** - Widgets displaying in sidebar
 - **google_analytics** - Google Analytics ID
-- **favicon** - Favicon path
-- **twitter** - Twiiter ID
-- **google_plus** - Google+ ID
+- **favicon** - Favicon path (ie. '/favicon.ico')
+- **twitter_id** - Twitter ID of the author (ie. `@c_g_martin`)
+- **google_plus** - Google+ profile link
 
 ## Features
 
@@ -79,9 +78,7 @@ This theme uses [Fancybox] to showcase your photos. You can use Markdown syntax 
 
 ### Sidebar
 
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-
-This theme provides 5 built-in widgets:
+This theme provides 5 built-in widgets that can be displayed in the sidebar:
 
 - category
 - tag
@@ -89,7 +86,7 @@ This theme provides 5 built-in widgets:
 - archives
 - recent_posts
 
-All of them are enabled by default. You can edit them in `widget` setting.
+All widgets are enabled by default. You can edit them in `widget` setting.
 
 ## Development
 
@@ -100,3 +97,4 @@ All of them are enabled by default. You can edit them in `widget` setting.
 [Hexo]: http://zespia.tw/hexo/
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
+[Bootstrap v3]: http://getbootstrap.com/

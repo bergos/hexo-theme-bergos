@@ -68,26 +68,56 @@ google_plus:
 
 ## Features
 
+### Fontawesome
+
+A [custom tag](https://hexo.io/api/tag.html) for Font Awesome icons is available for use.
+
+Usage:
+```
+{% fa [icon-name] [options...] %}
+```
+
+Examples:
+```
+{% fa info-circle %} Info tip
+{% fa refresh spin %} Animated loading spinner
+{% fa home fw %} Fixed-width icon
+```
+
+
 ### Fancybox
 
 This theme uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
+Usage:
 ```
 ![img caption](img url)
+
+~or~
 
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
 
+
 ### Callouts
 
-A [custom tag](https://hexo.io/api/tag.html) for a Bootstrap "callout" style is available:
+A [custom tag](https://hexo.io/api/tag.html) for a Bootstrap "callout" style is available for use.
 
+Usage:
 ```
 {% callout [type:default|primary|success|info|warning|danger] %}
-#### Callout title
+...content...
+{% endcallout %}
+```
+
+Example:
+```
+{% callout info %}
+#### {% fa info-circle %} Info tip
 This is some callout content
 {% endcallout %}
 ```
+
 
 ### Sidebar
 
@@ -100,6 +130,7 @@ This theme provides 5 built-in widgets that can be displayed in the sidebar:
 - recent_posts
 
 All widgets are enabled and will displayed by default. You can toggle them on/off with the `widgets` setting.
+
 
 ## Development
 

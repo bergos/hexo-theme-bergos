@@ -1,3 +1,4 @@
+/** Custom Bootstrap Overrides (and other styles) */
 /*
  * Globals
  */
@@ -29,81 +30,13 @@ code {
   font-size: 80%;
 }
 
-/*
- * Override Bootstrap's default container.
- */
+.fa { margin-right: 0.25em; }
 
+/* Override Bootstrap's default container width */
 @media (min-width: 1200px) {
   .container {
     width: 970px;
   }
-}
-
-/*
- * Callouts
- */
-.bs-callout {
-  padding: 20px;
-  margin: 20px 0;
-  border: 1px solid #eee;
-  border-left-width: 5px;
-  border-radius: 3px;
-}
-.bs-callout h4,
-.bs-callout .fa {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-.bs-callout p:last-child {
-  margin-bottom: 0;
-}
-.bs-callout code {
-  border-radius: 3px;
-}
-.bs-callout+.bs-callout {
-  margin-top: -5px;
-}
-.bs-callout-default {
-  border-left-color: #777;
-}
-.bs-callout-default h4,
-.bs-callout-default .fa {
-  color: #777;
-}
-.bs-callout-primary {
-  border-left-color: #428bca;
-}
-.bs-callout-primary h4,
-.bs-callout-primary .fa {
-  color: #428bca;
-}
-.bs-callout-success {
-  border-left-color: #5cb85c;
-}
-.bs-callout-success h4,
-.bs-callout-success .fa {
-  color: #5cb85c;
-}
-.bs-callout-danger {
-  border-left-color: #d9534f;
-}
-.bs-callout-danger h4,
-.bs-callout-danger .fa {
-  color: #d9534f;
-}
-.bs-callout-warning {
-  border-left-color: #f0ad4e;
-}
-.bs-callout-warning h4,
-.bs-callout-warning .fa {
-  color: #f0ad4e;
-}
-.bs-callout-info {
-  border-left-color: #5bc0de;
-}
-.bs-callout-info h4,
-.bs-callout-info .fa {
-  color: #5bc0de;
 }
 
 /*
@@ -115,7 +48,6 @@ code {
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
-
 
 .navbar-inverse { border: 0; }
 
@@ -172,7 +104,7 @@ code {
 }
 
 /*
- * Blog name and description
+ * Blog header and description
  */
 
 .blog-header {
@@ -188,7 +120,6 @@ code {
   font-size: 20px;
   color: #999;
 }
-
 
 /*
  * Main column and sidebar layout
@@ -243,7 +174,6 @@ code {
   border-radius: 30px;
 }
 
-
 /*
  * Blog posts
  */
@@ -251,17 +181,127 @@ code {
 .article {
   margin-bottom: 60px;
 }
-.article-title {
+
+.article-header h1 {
   margin-top: 0;
   margin-bottom: 5px;
 }
+.article-header h1 a {
+  color: #333;
+}
+.article-header h1 a:hover {
+  color: #23527c;
+}
+
 .article-meta {
   margin-bottom: 20px;
   color: #999;
+  font-size: 0.9em;
+}
+.article-meta > * {
+  display: inline-block;
+  margin-right: 15px;
+}
+.article-meta a {
+  color: inherit;
 }
 
-.article-category {
-  font-size: .80em;
+.article-footer {
+  font-size: 0.85em;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.article-footer:after { /* clearfix */
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.article-footer a {
+  color: #999;
+  text-decoration: none;
+}
+.article-footer a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+
+#article-nav>li {
+  padding: 2px;
+  font-size: 0.8em;
+}
+#article-nav>li>a {
+  border: 1px solid #337ab7;
+}
+#article-nav>li>a:hover {
+  border: 1px solid #23527c;
+}
+.article-nav-link-wrap .fa {
+  margin: 4px 0;
+}
+
+.article-comment-link { display: inline-block; }
+.article-share-link {
+  cursor: pointer;
+  float: right;
+  margin-left: 20px;
+}
+
+.article-tag-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.article-tag-list-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+.article-tag-list-link:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 5px;
+}
+
+#article-nav {
+  margin-top: 30px;
+}
+
+/*
+ * Article media
+ */
+.article-entry img,
+.article-entry video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.article-entry .caption {
+  color: #999;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  position: relative;
+  text-align: center;
+}
+.article-entry .video-container {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.article-entry .video-container iframe,
+.article-entry .video-container object,
+.article-entry .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
 }
 
 /*

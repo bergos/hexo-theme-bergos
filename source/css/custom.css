@@ -32,10 +32,16 @@ code {
 
 .fa { margin-right: 0.25em; }
 
-.btn { border-radius: 0.8em; }
-.btn-primary { background-color: #428bca; }
+/* Buttons */
+.btn {
+  border-radius: 30px;
+}
+.btn-primary {
+  background-color: #428bca;
+  border-color: #337ab7;
+}
 .nav-pills>li>a {
-  border-radius: 0.8em;
+  border-radius: 30px;
 }
 
 /* Override Bootstrap's default container width */
@@ -168,17 +174,6 @@ code {
 .sidebar-module-list-count:before { content: "("; }
 .sidebar-module-list-count:after { content: ")"; }
 
-/* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
 
 /*
  * Blog posts
@@ -225,6 +220,7 @@ code {
 .article-author:before { content: "\f007"; }
 .article-category-link:before { content: "\f07b"; }
 
+/* article footer content */
 .article-footer {
   font-size: 0.85em;
   border-top: 1px solid #eee;
@@ -244,20 +240,6 @@ code {
 .article-footer a:hover {
   color: #666;
   text-decoration: underline;
-}
-
-#article-nav>li {
-  padding: 2px;
-  font-size: 0.8em;
-}
-#article-nav>li>a {
-  border: 1px solid #337ab7;
-}
-#article-nav>li>a:hover {
-  border: 1px solid #23527c;
-}
-.article-nav-link-wrap .fa {
-  margin: 4px 0;
 }
 
 .article-comment-link { display: inline-block; }
@@ -285,9 +267,24 @@ code {
   -webkit-font-smoothing: antialiased;
 }
 
+/* prev/next navigation between articles */
 #article-nav {
   margin-top: 30px;
 }
+#article-nav>li {
+  padding: 2px;
+  font-size: 0.8em;
+}
+#article-nav>li>a {
+  border: 1px solid #337ab7;
+}
+#article-nav>li>a:hover {
+  border: 1px solid #23527c;
+}
+.article-nav-link-wrap .fa {
+  margin: 4px 0;
+}
+
 
 /*
  * Article media
@@ -383,12 +380,12 @@ code {
   color: #fff;
 }
 #page-nav>*:last-child {
-  border-top-right-radius: 0.8em;
-  border-bottom-right-radius: 0.8em;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 #page-nav>*:first-child {
-  border-top-left-radius: 0.8em;
-  border-bottom-left-radius: 0.8em;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 /*

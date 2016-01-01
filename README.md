@@ -4,6 +4,24 @@ A simple [Bootstrap] v3 blog theme for [Hexo].
 
 Based on the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
 
+**WORK IN PROGRESS ~ Jan 2016 **
+
+- [x] Bootstrap/Font Awesome CSS CDN links
+- [x] Bootstrap navigation menu
+- [x] Site header/footer
+- [x] Sidebar widgets
+- [x] Highlight.js styles
+- [x] Fancybox single image styling
+- [x] Pagination styling
+- [ ] Image gallery styles
+
+Nice-to-haves:
+
+- [x] Bootstrap ["callout" styles](http://cpratt.co/twitter-bootstrap-callout-css-styles/)
+- [ ] Categories listing page
+- [ ] Tags listing page
+- [ ] Custom pagination helper using Bootstrap markup
+
 ## Setup Instructions
 
 ### Install

@@ -143,12 +143,19 @@ code {
 }
 
 @media (min-width: 768px) {
-  .navbar { border-radius: 0; }
+  .navbar {
+    border-radius: 0;
+    min-height: 40px;
+  }
 
   #main-menu-navbar {
     margin-left: -30px; /** Remove this if `.navbar-brand` is enabled */
   }
 
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .navbar-inverse .navbar-nav>li>a.active:after {
     position: absolute;
     bottom: 0;
@@ -199,6 +206,7 @@ code {
 }
 .sidebar-module h4 {
   margin-top: 0;
+  margin-bottom: 10px;
 }
 .sidebar-module-inset {
   padding: 15px;

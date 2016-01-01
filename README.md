@@ -1,22 +1,26 @@
-# hexo-theme-bootstrap3
+# hexo-theme-bootstrap-blog
 
-A basic [Bootstrap v3] blog theme for [Hexo].
+A simple [Bootstrap] v3 blog theme for [Hexo].
 
 Based on the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
 
-## Installation
+This theme started from the [default Landscape Hexo theme](https://github.com/hexojs/hexo-theme-landscape), and many of its features are included (fancybox, photo galleries, highlight.js styles). But some Landscape features have been removed - design choices were made to simplify the styles and layout templates:
+* The Landscape Stylus styles have been replaced with standard CSS files which override `bootstrap.min.css`.
+* Some configuration settings were removed to simplify the logic in the Layout templates. See the [Configuration section](#configuration) below for more info.
+
+## Setup Instructions
 
 ### Install
 
-**Bootstrap3 theme requires Hexo 2.4 and above.**
+**This theme requires Hexo 2.4 and above.**
 
 1) Install theme:
 
 ```bash
-$ git clone https://github.com/cgmartin/hexo-theme-bootstrap3.git themes/bootstrap3
+$ git clone https://github.com/cgmartin/hexo-theme-bootstrap-blog.git themes/bootstrap-blog
 ```
 
-2) Install [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) (optional):
+2) (optional) Install [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) for more Bootstrap tags (textcolors, buttons, labels, badges, etc.):
 
 ```bash
 $ npm install hexo-tag-bootstrap --save
@@ -24,18 +28,20 @@ $ npm install hexo-tag-bootstrap --save
 
 ### Enable
 
-Modify the `theme` setting in `_config.yml` to `bootstrap3`.
+Modify the `theme` setting in `_config.yml` to `bootstrap-blog`.
 
 ### Update
 
 ``` bash
-cd themes/bootstrap3
+cd themes/bootstrap-blog
 git pull
 ```
 
 ## Configuration
 
 ``` yml
+# File: themes/bootstrap-blog/_config.yml
+
 # Header
 menu:
   Home: /
@@ -79,6 +85,8 @@ google_plus:
 
 A [custom tag](https://hexo.io/api/tag.html) for Font Awesome icons is available for use.
 
+*Copied from [akarzim/hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome).*
+
 Usage:
 ```
 {% fa [icon-name] [options...] %}
@@ -104,7 +112,6 @@ Usage:
 
 {% fancybox img_url [img_thumbnail] [img_caption] %}
 ```
-
 
 ### Callouts
 
@@ -149,4 +156,4 @@ All widgets are enabled and will displayed by default. You can toggle them on/of
 [Hexo]: http://zespia.tw/hexo/
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
-[Bootstrap v3]: http://getbootstrap.com/
+[Bootstrap]: http://getbootstrap.com/

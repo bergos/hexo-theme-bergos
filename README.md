@@ -4,10 +4,6 @@ A simple [Bootstrap] v3 blog theme for [Hexo].
 
 Based on the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
 
-This theme started from the [default Landscape Hexo theme](https://github.com/hexojs/hexo-theme-landscape). While many of its features are included (fancybox, photo galleries, highlight.js styles), be aware that some have been removed - design choices were made to simplify the styles and layout templates:
-* The Landscape Stylus styles have been replaced with standard CSS files which override `bootstrap.min.css`.
-* Some configuration settings were removed to simplify the logic in the Layout templates. See the [Configuration section](#configuration) below for more info.
-
 ## Setup Instructions
 
 ### Install
@@ -149,9 +145,17 @@ All widgets are enabled and will displayed by default. You can toggle them on/of
 
 ## Development
 
-### Requirements
+This theme started from the [default Landscape Hexo theme](https://github.com/hexojs/hexo-theme-landscape).
 
-- Hexo 2.4+
+While many of Landscape's features are included here (fancybox, photo galleries, highlight.js styles), be aware that some have been removed - design choices were made to simplify the styles and layout templates:
+* The Landscape Stylus styles have been replaced with standard CSS files which override `bootstrap.min.css`. Stylus is used only for [bundling the CSS files](./source/css/styles.styl). Feel free to convert the CSS to your pre-processor of choice (Stylus, LESS, Sass, etc.).
+* Some configuration settings were removed to simplify the logic in the Layout templates. See the [Configuration section](#configuration) for more info.
+
+## License ##
+
+[MIT License](http://cgm.mit-license.org/)
+
+Copyright © 2016 Christopher Martin
 
 [Hexo]: http://zespia.tw/hexo/
 [Fancybox]: http://fancyapps.com/fancybox/

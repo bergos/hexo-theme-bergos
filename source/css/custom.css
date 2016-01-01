@@ -324,6 +324,11 @@ code {
   margin-top: 0;
 }
 
+.article-gallery {
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
 /*
  * Archives
  */

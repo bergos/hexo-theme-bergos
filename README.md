@@ -13,7 +13,7 @@ Based on the [official Bootstrap Blog example template](http://getbootstrap.com/
 - [x] ~~Highlight.js styles~~
 - [x] ~~Fancybox single image styling~~
 - [x] ~~Pagination styling~~
-- [ ] Image gallery styles
+- [x] Image gallery styles
 
 Nice-to-haves:
 

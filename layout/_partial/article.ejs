@@ -10,7 +10,6 @@
     <%- partial('post/category') %>
   </div>
   <div class="article-inner">
-    <%- partial('post/gallery') %>
 
     <div class="article-entry" itemprop="articleBody">
       <% if (post.excerpt && index){ %>
@@ -24,6 +23,9 @@
         <%- post.content %>
       <% } %>
     </div>
+
+    <%- partial('post/gallery') %>
+
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
         <i class="fa fa-share"></i> Share

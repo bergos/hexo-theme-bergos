@@ -129,7 +129,7 @@ Usage:
 
 ### Callouts
 
-A [custom tag](https://hexo.io/api/tag.html) for a Bootstrap "callout" style is available for use.
+A custom tag for a [Bootstrap "callout"](http://cpratt.co/twitter-bootstrap-callout-css-styles/) style is available for use.
 
 Usage:
 ```

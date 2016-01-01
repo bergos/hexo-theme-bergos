@@ -212,6 +212,19 @@ code {
 .article-meta a {
   color: inherit;
 }
+.article-date:before,
+.article-author:before,
+.article-category-link:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 0.25em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.article-date:before { content: "\f073"; }
+.article-author:before { content: "\f007"; }
+.article-category-link:before { content: "\f07b"; }
+
 
 
 .article-footer {
@@ -269,7 +282,9 @@ code {
   display: inline-block;
   font-family: FontAwesome;
   content: "\f02b";
-  margin-right: 5px;
+  margin-right: 0.25em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
 #article-nav {

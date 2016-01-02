@@ -10,6 +10,7 @@ function isCurrentMenu(menu){
   // filter the input path and the current path
   var paths = [path, this.path].map(function(p) {
     return p
+      .replace(new RegExp('^' + hexo.config.root), '')
       .replace(/index.html$/, '')
       .replace(/\/$/, '')
       .replace(/^\//, '');

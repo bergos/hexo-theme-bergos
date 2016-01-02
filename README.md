@@ -160,7 +160,7 @@ This theme provides 6 built-in widgets that can be displayed in the sidebar:
 All widgets are enabled and displayed by default. You can toggle them on/off with the `widgets` setting in the theme's [_config.yml](./config.yml).
 
 \* **NOTE**: The "about" widget contains static Lorem Ipsum text by default. You'll want to edit it for your site or disable the widget in the [theme config](./config.yml). You can also modify it to include contents from a Markdown page:
-```
+```html
 <div class="sidebar-module sidebar-module-inset">
   <h4>About</h4>
   <%- site.pages['data'].find(function(p) { return p.path === 'about/index.html'; }).content %>

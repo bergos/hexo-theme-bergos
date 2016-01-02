@@ -24,7 +24,9 @@
       <% } %>
     </div>
 
-    <%- partial('post/gallery') %>
+    <% if (!(post.excerpt && index)){ %>
+      <%- partial('post/gallery') %>
+    <% } %>
 
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">

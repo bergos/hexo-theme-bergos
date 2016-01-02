@@ -150,7 +150,7 @@ This is some callout content
 
 This theme provides 6 built-in widgets that can be displayed in the sidebar:
 
-- [about](./layout/_widget/about.ejs)
+- [about](./layout/_widget/about.ejs)\*
 - [category](./layout/_widget/category.ejs)
 - [tag](./layout/_widget/tag.ejs)
 - [tagcloud](./layout/_widget/tagcloud.ejs)
@@ -158,6 +158,16 @@ This theme provides 6 built-in widgets that can be displayed in the sidebar:
 - [recent_posts](./layout/_widget/recent_posts.ejs)
 
 All widgets are enabled and displayed by default. You can toggle them on/off with the `widgets` setting in the theme's [_config.yml](./config.yml).
+
+\* The "about" widget by default contains static HTML. It can be modified to include the contents from a Markdown page:
+```
+<div class="sidebar-module sidebar-module-inset">
+  <h4>About</h4>
+  <%- site.pages['data'].find(function(p) { return p.path === 'about/index.html'; }).content %>
+</div>
+```
+...then run `hexo new page about` to create the Markdown page.
+
 
 ## Development
 

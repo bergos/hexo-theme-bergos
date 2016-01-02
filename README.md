@@ -97,7 +97,7 @@ google_plus:
 
 ### Fontawesome
 
-A [custom tag](https://hexo.io/api/tag.html) for Font Awesome icons is available for use.
+A custom tag for [Font Awesome] icons is available for use.
 
 *Copied from [akarzim/hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome).*
 
@@ -116,7 +116,7 @@ Examples:
 
 ### Fancybox
 
-This theme uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+This theme uses [Fancybox] to showcase your photos. You can use the image Markdown syntax or fancybox tag plugin to add your photos.
 
 Usage:
 ```
@@ -129,7 +129,7 @@ Usage:
 
 ### Callouts
 
-A custom tag for a [Bootstrap "callout"](http://cpratt.co/twitter-bootstrap-callout-css-styles/) style is available for use.
+A custom tag for the [Bootstrap "callout" style](http://cpratt.co/twitter-bootstrap-callout-css-styles/) is available for use.
 
 Usage:
 ```
@@ -146,30 +146,26 @@ This is some callout content
 {% endcallout %}
 ```
 
-
 ### Sidebar
 
 This theme provides 6 built-in widgets that can be displayed in the sidebar:
 
-- about
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
+- [about](./layout/_widget/about.ejs)
+- [category](./layout/_widget/category.ejs)
+- [tag](./layout/_widget/tag.ejs)
+- [tagcloud](./layout/_widget/tagcloud.ejs)
+- [archives](./layout/_widget/archives.ejs)
+- [recent_posts](./layout/_widget/recent_posts.ejs)
 
-All widgets are enabled and will displayed by default. You can toggle them on/off with the `widgets` setting.
-
+All widgets are enabled and displayed by default. You can toggle them on/off with the `widgets` setting in the theme's [_config.yml](./config.yml).
 
 ## Development
 
-This theme started from the [default Landscape Hexo theme](https://github.com/hexojs/hexo-theme-landscape).
+The [default Landscape Hexo theme](https://github.com/hexojs/hexo-theme-landscape) was used as the starting point and heavily edited for this theme.
 
-While many of Landscape's features are included here (fancybox, photo galleries, highlight.js styles), be aware that some have been removed - design choices were made to simplify the styles and layout templates:
-* The Landscape Stylus styles have been replaced with standard CSS files which override `bootstrap.min.css`. Stylus is used only for [bundling the CSS files](./source/css/styles.styl). Feel free to convert the CSS to your pre-processor of choice (Stylus, LESS, Sass, etc.).
-* Some configuration settings were removed to simplify the logic in the Layout templates. See the [Configuration section](#configuration) for more info.
+The Landscape Stylus styles have been replaced with standard CSS files which override `bootstrap.min.css`. Stylus is used only for [bundling the CSS files](./source/css/styles.styl). Feel free to convert the CSS to your pre-processor of choice (Stylus, LESS, Sass, etc.).
 
-## License ##
+## License
 
 [MIT License](http://cgm.mit-license.org/)
 

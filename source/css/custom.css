@@ -173,6 +173,9 @@ code {
 }
 .sidebar-module-list-count:before { content: "("; }
 .sidebar-module-list-count:after { content: ")"; }
+.sidebar-module-list-child {
+  padding-left: 25px;
+}
 
 
 /*

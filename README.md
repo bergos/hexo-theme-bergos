@@ -95,7 +95,7 @@ google_plus:
 
 ## Features
 
-### Fontawesome
+### Font Awesome
 
 A custom tag for [Font Awesome] icons is available for use.
 

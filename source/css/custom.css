@@ -45,10 +45,10 @@ code {
 }
 
 .left, .alignleft {
-    float: left;
+  float: left;
 }
 .right, .alignright {
-    float: right;
+  float: right;
 }
 
 /* Override Bootstrap's default container width */
@@ -70,23 +70,27 @@ code {
 
 .navbar-inverse { border: 0; }
 
-.navbar-inverse .navbar-toggle { border-color: #cdddeb; }
-.navbar-inverse .navbar-toggle .icon-bar { background-color: #cdddeb; }
+.navbar-inverse .navbar-toggle {
+  border-color: #cdddeb;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #cdddeb;
+}
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-    background-color: #65A2D6;
+  background-color: #65A2D6;
 }
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav>li>a {
-    color: #cdddeb;
-    font-weight: 500;
+  color: #cdddeb;
+  font-weight: 500;
 }
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-    border-color: #cdddeb;
+  border-color: #cdddeb;
 }
 
 .navbar-inverse .navbar-nav>li>a.active {
@@ -230,20 +234,27 @@ code {
 .article-author:before { content: "\f007"; }
 .article-category-link:before { content: "\f07b"; }
 
+.article-entry {
+  overflow: hidden;
+}
+
 /* blockquote */
+.article-entry blockquote footer cite {
+  display: inline-block;
+}
 .article-entry blockquote footer cite::before {
-    content: "~";
-    padding: 0px 0.5em;
+  content: "~";
+  padding: 0px 0.5em;
 }
 
 .article-entry .pullquote.right {
-    margin-right: 0.5em;
-    margin-left: 1em;
+  margin-right: 0.5em;
+  margin-left: 1em;
 }
 .article-entry .pullquote {
-    text-align: left;
-    width: 45%;
-    margin: 0;
+  text-align: left;
+  width: 45%;
+  margin: 0;
 }
 
 /* article footer content */
@@ -253,11 +264,11 @@ code {
   padding-top: 15px;
 }
 .article-footer:after { /* clearfix */
-   content: " ";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 .article-footer a {
   color: #999;

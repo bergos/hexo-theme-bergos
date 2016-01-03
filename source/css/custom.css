@@ -223,6 +223,12 @@ code {
 .article-author:before { content: "\f007"; }
 .article-category-link:before { content: "\f07b"; }
 
+/* blockquote */
+.article-entry blockquote footer cite::before {
+    content: "~";
+    padding: 0px 0.5em;
+}
+
 /* article footer content */
 .article-footer {
   font-size: 0.85em;

@@ -30,20 +30,20 @@ Modify the `theme` setting in `_config.yml` to `bootstrap-blog`.
 
 ### Update
 
-``` bash
+```bash
 cd themes/bootstrap-blog
 git pull
 ```
 
 ## Configuration
 
-``` yml
+```yml
 # File: themes/bootstrap-blog/_config.yml
 
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  Home: index.html
+  Archives: archives/
 rss: /atom.xml
 
 # Content
@@ -53,12 +53,16 @@ fancybox: true
 # Sidebar
 sidebar: true
 widgets:
-- about
+- about         # See also: `about_content`
 - category
 - tag
 - tagcloud
 - archives
 - recent_posts
+about_widget_content: >
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod.
+  Cras mattis consectetur purus sit amet fermentum. Aenean
+  lacinia bibendum nulla sed consectetur.</p>
 
 # Miscellaneous
 google_analytics:
@@ -72,18 +76,50 @@ google_plus:
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox] for images
 - **widgets** - Enable sidebar widgets ([more info below](#sidebar))
+- **about_widget_content** - The HTML content for the "About" sidebar widget ([more info below](#sidebar))
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path (ie. '/favicon.ico')
 - **twitter_id** - Twitter ID of the author (ie. `@c_g_martin`)
 - **google_plus** - Google+ profile link
 
+Instead of editing the layout's configuration file directly, you can override the theme settings from your project's root `_config.yml`, ie.:
+```yml
+theme_config:
+  # Header
+  menu:
+    Home: index.html
+    Archives: archives/
+    'Another Page': page/index.html
+  widgets:
+   - about
+   - category
+   - archive
+   - recent_posts
+   - tag
+  about_widget_content: >
+    <p>This is <strong>custom content</strong> for the
+    "about" sidebar widget.</p>
+```
+
 ## Features
+
+### Front-Matter Extras
+
+Optional settings in the front-matter can be added for various effects:
+```yml
+---
+author: Author Name   # displays the post's author
+photos:               # displays a Bootstrap thumbnail gallery
+- images/HNCK0537.jpg
+- images/HNCK6173.jpg
+---
+```
 
 ### Font Awesome
 
 A custom tag for [Font Awesome] icons is available for use.
 
-*Copied from [akarzim/hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome).*
+*Credit goes to [akarzim/hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome).*
 
 Usage:
 ```
@@ -143,8 +179,9 @@ This theme provides 6 built-in widgets that can be displayed in the sidebar:
 
 All widgets are enabled and displayed by default. You can toggle them on/off with the `widgets` setting in the theme's [_config.yml](./config.yml).
 
-\* **NOTE**: The "about" widget contains static Lorem Ipsum text by default. You'll want to edit it for your site or disable the widget in the [theme config](./config.yml). You can also modify it to include contents from a Markdown page:
+\* **NOTE**: The "about" widget contains static Lorem Ipsum text by default. You'll want to edit the `about_widget_content` setting for your site or disable the widget in the [theme config](./config.yml). You can also modify the widget file itself to include contents from a Markdown page:
 ```html
+<!-- file: ./layout/_widget/about.ejs -->
 <div class="sidebar-module sidebar-module-inset">
   <h4>About</h4>
   <%- site.pages['data'].find(function(p) { return p.path === 'about/index.html'; }).content %>

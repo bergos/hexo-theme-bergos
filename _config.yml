@@ -1,7 +1,8 @@
 # Header
 menu:
-  Home: /
-  Archives: /archives
+  Home: index.html
+  Archives: archives/
+  Github: https://github.com/cgmartin/hexo-theme-bootstrap-blog
 rss: /atom.xml
 
 # Content

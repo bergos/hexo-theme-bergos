@@ -44,6 +44,13 @@ code {
   border-radius: 30px;
 }
 
+.left, .alignleft {
+    float: left;
+}
+.right, .alignright {
+    float: right;
+}
+
 /* Override Bootstrap's default container width */
 @media (min-width: 1200px) {
   .container {
@@ -227,6 +234,16 @@ code {
 .article-entry blockquote footer cite::before {
     content: "~";
     padding: 0px 0.5em;
+}
+
+.article-entry .pullquote.right {
+    margin-right: 0.5em;
+    margin-left: 1em;
+}
+.article-entry .pullquote {
+    text-align: left;
+    width: 45%;
+    margin: 0;
 }
 
 /* article footer content */

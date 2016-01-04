@@ -103,14 +103,17 @@ code {
     min-height: 40px;
   }
 
+  /** The following may need modification depending on
+      the size of your `navbar-brand` (if enabled) */
   #main-menu-navbar {
-    margin-left: -30px; /** Remove this if `.navbar-brand` is enabled */
+    margin-left: -30px;
   }
-
   .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  /** ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
   .navbar-inverse .navbar-nav>li>a.active:after {
     position: absolute;
     bottom: 0;
@@ -400,27 +403,15 @@ code {
   text-align: center;
   margin-bottom: 30px;
 }
-#page-nav>* {
-  font-size: 18px;
-  display: inline-block;
-  padding: 6px 12px;
-  border: 1px solid #337ab7;
-  margin-left: -1px;
-}
-#page-nav>a:hover {
-  text-decoration: none;
-  background-color: #eee;
-  border-color: #23527c;
-}
-#page-nav>span {
+#page-nav .pagination .active>* {
   background-color: #428bca;
-  color: #fff;
+  border-color: #428bca;
 }
-#page-nav>*:last-child {
+#page-nav .pagination>li:last-child>* {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-#page-nav>*:first-child {
+#page-nav .pagination>li:first-child>* {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }

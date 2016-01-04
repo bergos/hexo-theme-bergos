@@ -41,6 +41,7 @@ git pull
 # File: themes/bootstrap-blog/_config.yml
 
 # Header
+navbar_brand: false
 menu:
   Home: index.html
   Archives: archives/
@@ -71,6 +72,7 @@ twitter:
 google_plus:
 ```
 
+- **navbar_brand** - The HTML content for an optional ["navbar-brand"](http://getbootstrap.com/components/#navbar-brand-image). Can be text or an image. `false` to hide.
 - **menu** - Navigation menu (map of Titles to URLs)
 - **rss** - RSS link (ie. "/atom.xml")
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
@@ -86,6 +88,7 @@ Instead of editing the layout's configuration file directly, you can override th
 ```yml
 theme_config:
   # Header
+  navbar_brand: <img src="/navbrand.png">
   menu:
     Home: index.html
     Archives: archives/
@@ -189,6 +192,16 @@ All widgets are enabled and displayed by default. You can toggle them on/off wit
 ```
 ...then run `hexo new page about` to create the Markdown page.
 
+### Bootstrap Paginator Helper
+
+A custom `bs_paginator()` helper is used to produce [Bootstrap-compatible pagination markup](http://getbootstrap.com/components/#pagination). It is a drop-in replacement for Hexo's built-in `paginator()`.
+
+```
+<%- bs_paginator({
+      prev_text: '<i class="fa fa-chevron-left"></i> Prev',
+      next_text: 'Next <i class="fa fa-chevron-right"></i>'
+    }) %>
+```
 
 ## Development
 

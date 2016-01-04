@@ -250,6 +250,7 @@ code {
   padding: 0px 0.5em;
 }
 
+<<<<<<< Updated upstream
 .article-entry .pullquote.right {
   margin-right: 0.5em;
   margin-left: 1em;
@@ -258,6 +259,10 @@ code {
   text-align: left;
   width: 45%;
   margin: 0;
+=======
+.article-entry .thumbnail .caption {
+  padding: 0;
+>>>>>>> Stashed changes
 }
 
 /* article footer content */

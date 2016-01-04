@@ -24,6 +24,12 @@ $ git clone https://github.com/cgmartin/hexo-theme-bootstrap-blog.git themes/boo
 $ npm install hexo-tag-bootstrap --save
 ```
 
+3) (optional) Install [hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome) for placing Font Awesome icons in your Markdown:
+
+```bash
+$ npm install hexo-tag-fontawesome --save
+```
+
 ### Enable
 
 Modify the `theme` setting in `_config.yml` to `bootstrap-blog`.
@@ -117,25 +123,6 @@ photos:               # displays a Bootstrap thumbnail gallery
 - images/HNCK6173.jpg
 ---
 ```
-
-### Font Awesome
-
-A custom tag for [Font Awesome] icons is available for use.
-
-*Credit goes to [akarzim/hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome).*
-
-Usage:
-```
-{% fa [icon-name] [options...] %}
-```
-
-Examples:
-```
-{% fa info-circle %} Info tip
-{% fa refresh spin %} Animated loading spinner
-{% fa home fw %} Fixed-width icon
-```
-
 
 ### Fancybox
 

@@ -37,9 +37,12 @@ function bsPaginatorHelper(options){
 
   // Display the link to the previous page
   if (prevNext){
-    var prevClass = (current <= 1) ? ' class="disabled"' : '';
-    result += '<li' + prevClass + '><a class="page-prev" rel="prev" ' +
+    if (current > 1) {
+      result += '<li><a class="page-prev" rel="prev" ' +
               'href="' + link(current - 1) + '">' + prevText + '</a></li>';
+    } else {
+      result += '<li class="disabled"><span class="page-prev">' + prevText + '</a></li>';
+    }
   }
 
   if (options.show_all){
@@ -103,9 +106,12 @@ function bsPaginatorHelper(options){
 
   // Display the link to the next page
   if (prevNext){
-    var nextClass = (current >= total) ? ' class="disabled"' : '';
-    result += '<li' + nextClass + '><a class="page-next" rel="next" ' +
+    if (current < total) {
+      result += '<li><a class="page-next" rel="next" ' +
               'href="' + link(current + 1) + '">' + nextText + '</a></li>';
+    } else {
+      result += '<li class="disabled"><span class="page-next">' + nextText + '</a></li>';
+    }
   }
 
   return '<nav><ul class="pagination">' + result + '</ul></nav>';

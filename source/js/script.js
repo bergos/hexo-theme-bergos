@@ -70,6 +70,13 @@
     });
   });
 
+  // Bootstrap table style
+  $('.article-entry table').each(function(i, table)  {
+    if ($(this).parent().hasClass('table-responsive')) return;
+    $(this).addClass('table');
+    $(this).wrap('<div class="table-responsive"></div>');
+  });
+
   // Lightbox plugin
   if ($.fancybox){
     $('.image-link').fancybox();

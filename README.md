@@ -4,7 +4,7 @@ A simple [Bootstrap] v3 blog theme for [Hexo].
 
 Based on the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
 
-Demo site: <http://cgmartin.github.io/hexo-theme-bootstrap-blog/>
+[Demo site](http://cgmartin.github.io/hexo-theme-bootstrap-blog/) | [More Information](https://cgmartin.com/2016/01/05/bootstrap-blog-hexo-theme/)
 
 ## Setup Instructions
 

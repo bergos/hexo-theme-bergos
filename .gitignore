@@ -1,3 +1,8 @@
 .DS_Store
 node_modules
+source/css/bootstrap.min.css
+source/fonts
+source/images
+source/js/bootstrap.min.js
+source/js/jquery.min.js
 tmp

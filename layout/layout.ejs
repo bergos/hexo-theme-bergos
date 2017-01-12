@@ -1,5 +1,7 @@
 <%- partial('_partial/head') %>
 <body>
+ <div class="universe">
+
   <%- partial('_partial/masthead') %>
   <div class="container">
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
@@ -14,5 +16,7 @@
   </div>
   <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
   <%- partial('_partial/inline-scripts') %>
+
+ </div>
 </body>
 </html>

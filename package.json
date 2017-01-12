@@ -1,5 +1,13 @@
 {
-  "name": "hexo-theme-bootstrap-blog",
+  "name": "hexo-theme-bergos",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "install": "node install.js"
+  },
+  "dependencies": {
+    "bootstrap": "git://github.com/bergos/bergos-bootstrap.git#master",
+    "jquery": "^3.1.1",
+    "shelljs": "^0.7.5"
+  }
 }
